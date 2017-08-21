@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<withData /> renders the component only if there are no errors and loading is false 1`] = `
+<_class
+  fetch={
+    Object {
+      "error": null,
+      "loading": false,
+    }
+  }
+>
+  <Container
+    name="test"
+  >
+    <div>
+      <h1>
+        test
+      </h1>
+      <Component
+        fetch={
+          Object {
+            "error": null,
+            "loading": false,
+          }
+        }
+      >
+        <div>
+          hello world
+        </div>
+      </Component>
+    </div>
+  </Container>
+</_class>
+`;
+
+exports[`<withData /> shows a spinner if loading is true 1`] = `
+<Container
+  name="test"
+>
+  <Spinner>
+    <span>
+      Loading data... Please be patient as there is a lot of data to load!
+    </span>
+  </Spinner>
+</Container>
+`;
+
+exports[`<withData /> shows an error if present 1`] = `
+<Container
+  name="test"
+>
+  <span>
+    There was an error getting data
+  </span>
+</Container>
+`;

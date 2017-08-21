@@ -1,0 +1,27 @@
+#navBar {
+  margin-top: 10px;    
+}
+
+#navBar .active {
+  color: #B00;
+  font-weight: bold;
+}
+
+#navBar ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+#navBar li {
+  display: inline-block;
+}
+
+#navBar a {
+  margin-right: 10px;
+  border: 1px solid #2D0000;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  color: #2D0000;
+}
